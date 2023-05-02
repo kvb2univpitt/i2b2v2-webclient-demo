@@ -64,7 +64,7 @@ kvb2univpitt/i2b2-core-server-demo-postgresql:v1.7.13.2022.06
 docker run -d --name=i2b2v2-webclient-demo \
 --network i2b2-demo-net \
 -p 80:80 -p 443:443 \
-kvb2univpitt/i2b2v2-webclient-demo:recover.snapshot.2
+kvb2univpitt/i2b2v2-webclient-demo:sprint.30
 ```
 
 ###### Windows
@@ -84,7 +84,7 @@ kvb2univpitt/i2b2-core-server-demo-postgresql:v1.7.13.2022.06
 docker run -d --name=i2b2v2-webclient-demo ^
 --network i2b2-demo-net ^
 -p 80:80 -p 443:443 ^
-kvb2univpitt/i2b2v2-webclient-demo:recover.snapshot.2
+kvb2univpitt/i2b2v2-webclient-demo:sprint.30
 ```
 
 ### Access the Web Client
@@ -125,7 +125,7 @@ docker rm i2b2v2-webclient-demo
 Execute the following to delete the Docker image:
 
 ```
-docker rmi kvb2univpitt/i2b2v2-webclient-demo:recover.snapshot.2
+docker rmi kvb2univpitt/i2b2v2-webclient-demo:sprint.30
 ```
 
 ## Build the Image
