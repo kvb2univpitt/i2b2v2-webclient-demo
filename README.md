@@ -1,5 +1,6 @@
 # i2b2v2-webclient-demo
-This is a docker demonstration of the new i2b2 webclient version 2.  Note that the new version of the webclient is still in progress.  This demo is for people to test out the new UI interface.  The Docker image will updated often until the official version released.
+
+This is a docker image for the demonstration of the new i2b2 webclient [version 2](https://github.com/hms-dbmi/i2b2v2-webclient).  Note that the new version of the webclient is still a work in progress.  This demo is to test out the new UI interface.  The Docker image will updated often until the official version is released.
 
 ## Run the i2b2v2 Webclient Demo
 
@@ -11,7 +12,6 @@ This is a docker demonstration of the new i2b2 webclient version 2.  Note that t
 
 Prebuilt Docker container images have been created demonstration purposes:
 
-- [i2b2-idp-demo](https://hub.docker.com/r/kvb2univpitt/i2b2-idp-demo)
 - [i2b2-data-demo](https://hub.docker.com/r/kvb2univpitt/i2b2-data-demo-postgresql)
 - [i2b2-core-server-demo](https://hub.docker.com/r/kvb2univpitt/i2b2-core-server-demo-postgresql)
 - [i2b2v2-webclient-demo](https://hub.docker.com/r/kvb2univpitt/i2b2v2-webclient-demo)
