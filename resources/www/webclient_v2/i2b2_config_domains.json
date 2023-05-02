@@ -1,10 +1,10 @@
 {
-    "urlProxy": "/webclient_v2/proxy.php",
+    "urlProxy": "index.php",
     "urlFramework": "js-i2b2/",
     "lstDomains": [
         {
-            "domain": "i2b2demo",
             "name": "Local Demo",
+            "domain": "i2b2demo",
             "urlCellPM": "http://127.0.0.1/i2b2/services/PMService/",
             "allowAnalysis": true,
             "debug": false

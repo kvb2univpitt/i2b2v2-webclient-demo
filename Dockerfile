@@ -4,11 +4,11 @@ LABEL maintainer="Kevin Bui"
 
 COPY resources/bin/startup.sh /usr/local/bin/
 
-# COPY i2b2v2-webclient-RECOVER_SNAPSHOT-2.zip /tmp
-RUN curl -s -L -o /tmp/i2b2v2-webclient-RECOVER_SNAPSHOT-2.zip https://github.com/hms-dbmi/i2b2v2-webclient/archive/refs/tags/RECOVER_SNAPSHOT-2.zip
-RUN unzip /tmp/i2b2v2-webclient-RECOVER_SNAPSHOT-2.zip -d /var/www/html/ \
-    && mv /var/www/html/i2b2v2-webclient-RECOVER_SNAPSHOT-2 /var/www/html/webclient_v2 \
-    && rm -f /tmp/i2b2v2-webclient-RECOVER_SNAPSHOT-2.zip
+# COPY Sprint-30.zip /tmp
+RUN curl -s -L -o /tmp/Sprint-30.zip https://github.com/hms-dbmi/i2b2v2-webclient/archive/refs/tags/Sprint-30.zip
+RUN unzip /tmp/Sprint-30.zip -d /var/www/html/ \
+    && mv /var/www/html/i2b2v2-webclient-Sprint-30 /var/www/html/webclient_v2 \
+    && rm -f /tmp/Sprint-30.zip
 
 COPY resources/shibboleth/ /etc/shibboleth/
 COPY resources/httpd/conf/ /etc/httpd/conf/
