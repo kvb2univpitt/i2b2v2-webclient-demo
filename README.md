@@ -12,6 +12,7 @@ This is a docker image for the demonstration of the new i2b2 webclient [version 
 
 Prebuilt Docker container images have been created demonstration purposes:
 
+- [i2b2-idp-demo](https://hub.docker.com/r/kvb2univpitt/i2b2-idp-demo)
 - [i2b2-data-demo](https://hub.docker.com/r/kvb2univpitt/i2b2-data-demo-postgresql)
 - [i2b2-core-server-demo](https://hub.docker.com/r/kvb2univpitt/i2b2-core-server-demo-postgresql)
 - [i2b2v2-webclient-demo](https://hub.docker.com/r/kvb2univpitt/i2b2v2-webclient-demo)
