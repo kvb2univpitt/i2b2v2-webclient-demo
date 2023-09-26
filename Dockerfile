@@ -10,10 +10,16 @@ RUN unzip /tmp/i2b2v2-webclient-1.8.0_RC2.zip -d /var/www/html/ \
     && mv /var/www/html/i2b2v2-webclient-1.8.0_RC2 /var/www/html/webclient_v2 \
     && rm -f /tmp/i2b2v2-webclient-1.8.0_RC2.zip
 
+RUN curl -s -L -o /tmp/v1.7.13.0002.zip https://github.com/i2b2/i2b2-webclient/archive/refs/tags/v1.7.13.0002.zip
+RUN unzip /tmp/v1.7.13.0002.zip -d /var/www/html/ \
+    && mv /var/www/html/i2b2-webclient-1.7.13.0002 /var/www/html/webclient \
+    && rm -f /tmp/v1.7.13.0002.zip
+
 COPY resources/shibboleth/ /etc/shibboleth/
 COPY resources/httpd/conf/ /etc/httpd/conf/
 COPY resources/httpd/conf.d/ /etc/httpd/conf.d/
 COPY resources/www/ /var/www/html/
+RUN rm -f /var/www/html/index.php
 
 RUN test -d /var/run/lock || mkdir -p /var/run/lock \
     && test -d /var/lock/subsys/ || mkdir -p /var/lock/subsys/ \
