@@ -4,15 +4,16 @@ LABEL maintainer="Kevin Bui"
 
 COPY resources/bin/startup.sh /usr/local/bin/
 
-# COPY i2b2v2-webclient-1.8.0_RC2.zip /tmp
-RUN curl -s -L -o /tmp/i2b2v2-webclient-1.8.0_RC2.zip https://github.com/hms-dbmi/i2b2v2-webclient/archive/refs/tags/v1.8.0_RC2.zip
-RUN unzip /tmp/i2b2v2-webclient-1.8.0_RC2.zip -d /var/www/html/ \
-    && mv /var/www/html/i2b2v2-webclient-1.8.0_RC2 /var/www/html/webclient_v2 \
-    && rm -f /tmp/i2b2v2-webclient-1.8.0_RC2.zip
+# COPY i2b2v2-webclient-1.8.0_RC6.zip /tmp
+RUN curl -s -L -o /tmp/i2b2v2-webclient-1.8.0_RC6.zip https://github.com/hms-dbmi/i2b2v2-webclient/archive/refs/tags/v1.8.0_RC6.zip
+RUN unzip /tmp/i2b2v2-webclient-1.8.0_RC6.zip -d /var/www/html/ \
+    && mv /var/www/html/i2b2v2-webclient-1.8.0_RC6 /var/www/html/webclient_v2 \
+    && rm -f /tmp/i2b2v2-webclient-1.8.0_RC6.zip
 
-RUN curl -s -L -o /tmp/v1.7.13.0002.zip https://github.com/i2b2/i2b2-webclient/archive/refs/tags/v1.7.13.0002.zip
+# COPY v1.7.13.0002.zip /tmp
+RUN curl -s -L -o /tmp/v1.7.13.0002.zip https://github.com/i2b2/i2b2-webclient-classic/archive/refs/tags/v1.7.13.0002.zip
 RUN unzip /tmp/v1.7.13.0002.zip -d /var/www/html/ \
-    && mv /var/www/html/i2b2-webclient-1.7.13.0002 /var/www/html/webclient \
+    && mv /var/www/html/i2b2-webclient-classic-1.7.13.0002 /var/www/html/webclient \
     && rm -f /tmp/v1.7.13.0002.zip
 
 COPY resources/shibboleth/ /etc/shibboleth/
