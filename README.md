@@ -62,12 +62,12 @@ docker run -d --name=i2b2-data-demo \
 --network i2b2-demo-net \
 -e POSTGRESQL_ADMIN_PASSWORD=demouser \
 -p 5432:5432 \
-kvb2univpitt/i2b2-data-demo-postgresql:v1.7.13.2022.06
+kvb2univpitt/i2b2-data-demo-postgresql:v1.8.0.2024.01
 
 docker run -d --name=i2b2-core-server-demo \
 --network i2b2-demo-net \
 -p 9090:9090 \
-kvb2univpitt/i2b2-core-server-demo-postgresql:v1.7.13.2022.06
+kvb2univpitt/i2b2-core-server-demo-postgresql:v1.8.0.2024.01
 
 docker run -d --name=i2b2v2-webclient-demo \
 --network i2b2-demo-net \
@@ -89,12 +89,12 @@ docker run -d --name=i2b2-data-demo ^
 --network i2b2-demo-net ^
 -e POSTGRESQL_ADMIN_PASSWORD=demouser ^
 -p 5432:5432 ^
-kvb2univpitt/i2b2-data-demo-postgresql:v1.7.13.2022.06
+kvb2univpitt/i2b2-data-demo-postgresql:v1.8.0.2024.01
 
 docker run -d --name=i2b2-core-server-demo ^
 --network i2b2-demo-net ^
 -p 9090:9090 ^
-kvb2univpitt/i2b2-core-server-demo-postgresql:v1.7.13.2022.06
+kvb2univpitt/i2b2-core-server-demo-postgresql:v1.8.0.2024.01
 
 docker run -d --name=i2b2v2-webclient-demo ^
 --network i2b2-demo-net ^
